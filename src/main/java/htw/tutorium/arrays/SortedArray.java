@@ -38,6 +38,17 @@ public class SortedArray {
 		return -1;
 	}
 	
+	public void delete(int p) {
+		int tmp = search(p);
+		for(int i = tmp; i < sorted.length; i++) {
+			if(i < sorted.length - 1) {
+				sorted[i] = sorted[i + 1];
+			}
+		}
+		sorted[sorted.length -1] = 0;
+		index--;
+	}
+	
 	public int[] returnArray() {
 		return sorted;
 	}

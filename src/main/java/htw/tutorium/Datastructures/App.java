@@ -1,7 +1,7 @@
 package htw.tutorium.Datastructures;
 
 import htw.tutorium.arrays.SortedArray;
-import htw.tutorium.arrays.UnsortedArray;
+//import htw.tutorium.arrays.UnsortedArray;
 
 public class App 
 {
@@ -11,19 +11,19 @@ public class App
     }
     
     public void runUnsorted() {
-    	//UnsortedArray u = new UnsortedArray(8);
+//    		UnsortedArray u = new UnsortedArray(8);
 //        u.insert(6);
 //        u.insert(7);
 //        u.insert(74);
 //        u.insert(1);
-//        
-//        
+        
+        
 //        int[] tmp = u.returnArray();
 //        for(int i = 0; i<tmp.length; i++) {
 //        	System.out.println(tmp[i]);
 //        }
 //        u.delete(74);
-//        
+        
 //        tmp = u.returnArray();
 //        for(int i = 0; i<tmp.length; i++) {
 //        	System.out.println(tmp[i]);
@@ -49,15 +49,19 @@ public class App
     	s.insert(46);
     	s.insert(50);
     	s.insert(60);
-    	s.insert(63);
+    	
     	
     	int[] tmp = s.returnArray();
     	for(int i = 0; i < tmp.length;i++) {
-    		System.out.println(tmp[i]);
+    		System.out.println("index " + i + ": " + tmp[i]);
     	}
     	
-    	System.out.println(s.search(28));
+    	s.delete(22);
     	
+    	tmp = s.returnArray();
+    	for(int i = 0; i < tmp.length;i++) {
+    		System.out.println("index " + i + ": " + tmp[i]);
+    	}
     }
     
 }
