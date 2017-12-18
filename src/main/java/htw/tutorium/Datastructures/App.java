@@ -64,4 +64,22 @@ public class App
     	}
     }
     
+    public void levenstein() {
+    	String string1 = "abcde";
+    	String string2 = "abef";
+    	
+    	int[][] levenstein = new int[4][4];
+    	
+    	
+    	for(int i = 0; i < levenstein.length; i++) {
+    		for(int j = 0; j < levenstein[0].length; j++) {
+    			
+    			
+    			int min = (Math.min( levenstein[i][j - 1], Math.min( levenstein[i - 1][j - 1], levenstein[i - 1][j]))) + 1;
+    		}
+    	}
+    	
+    	
+    }
+    
 }
